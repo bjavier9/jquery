@@ -1,0 +1,199 @@
+#caja{
+	height: 200px;
+	width: 200px;
+	background: red;
+}
+#p1{
+	background-color:red;
+}
+#p2{
+	background-color:yellow;
+}
+#p3{
+	background-color:blue;
+}
+#p4{
+	background-color: green;
+}
+.perro3{
+	color: green;
+	font-size: 25px;
+}
+.perro1{
+	color: yellow;
+	font-size: 56px;
+}
+.perro2{
+color: blue ;
+font-size: 34px;
+}
+.gato{
+	background: yellow;
+	text-align: center;
+	padding-top: 58px;
+	width: 100px;
+	height: 50px;
+	font-size: 27px;
+
+}
+#p1{
+	background: blue;
+	height: 60px;
+	width: 60px;
+	border: 2px solid black;
+	border-radius: 8px;
+	text-align: center;
+}
+#p3{
+	background: red;
+	height: 60px;
+	width: 60px;
+	border: 2px solid black;
+	border-radius:8px;
+	text-align: center;
+}
+#p2{
+	background: yellow;
+	height: 60px;
+	width: 60px;
+	border: 2px solid black;
+	border-radius:8px;
+	text-align: center;
+}
+.clase{
+	background: green;
+	font-size: 45px;
+	padding: 7px;
+}
+span{
+display: none;
+}
+#pal1{
+	background-color: yellow;
+	height: 60px;
+	width: 60px;
+	border-radius: 8px;
+	border:2px solid black;
+	text-align: center;
+}
+#pal2{
+	background-color: red;
+	height: 60px;
+	width: 60px;
+	border-radius: 8px;
+	border:2px solid black;
+	text-align: center;
+}
+#pal4{
+	background-color: green;
+	height: 60px;
+	width: 60px;
+	border-radius: 8px;
+	border:2px solid black;
+	text-align: center;
+}
+#pal3{
+	background-color: blue;
+	height: 60px;
+	width: 60px;
+	border-radius: 8px;
+	border:2px solid black;
+	text-align: center;
+}
+.caja{
+	display: inline;
+	height: 300px;
+	width: 300px;
+	padding: 10px 10px;
+	background-color: black;
+}
+.cc{
+	background-color: #cccccc;
+}
+form{
+	padding: 10px;
+	background-color: #8B8685;
+	color:#09404f;
+	font-size: 14px;
+	width: 40%;
+	margin: 0 auto;
+}
+input{
+	border: 1px solid #09404f;
+}
+
+#enviar{
+	background: #26689e;
+	color: white;
+	cursor: pointer;
+}
+ul{
+	list-style: none;
+	padding: 0px;
+}
+#dt{
+	height:250px;
+	width: 300px;
+	border: 1px solid black;
+}
+#encabezado{
+	font-size: 30px;
+	background: #000000;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 30px;
+	width: 100%;
+	height: 80px;
+}
+#gato{
+	display: none;
+	height: 100px;
+	width: 100px;
+	background-color: red;
+	border: 2px solid black;
+	margin: 10px;
+}
+#r{
+	display: none;
+	height: 200px;
+	width: 200px;
+	font-size: 20px;
+	text-align: center;
+	background: #00bfff;
+	border: 4px solid #000000;
+	color: #000000;
+	border-radius: 5px;
+}
+p{
+	position: relative;
+	width: 400px;
+	height: 90px;
+	margin-left: 40px;
+	padding-top:40px;
+}
+
+.c1{
+	background-color: black;
+	left: 10px; 
+}
+.c2{
+	background-color:green;
+	left:80px; 
+}
+
+div{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	float: left;
+}
+.seleccionado{
+	color: red;
+}
+table{
+	border: 1px solid #cccccc;
+	border-collapse: collapse;
+}
+.xc{
+	background: #E8ECED;
+}

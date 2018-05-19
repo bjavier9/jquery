@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Apped&Prepend</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<p>GATITO</p>
+<ol>
+	<li>ey 1</li>
+	<li>ey 2</li>
+	<li>ey 3</li>
+</ol>
+<button id="boton2">agregar a lista</button>
+<button id="boton1">Agregar texto</button>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#boton1").click(function(){
+			$("p").prepend(" <b>Hola</b>");
+		});
+		$("#boton2").click(function(){
+			$("ol").append("<li>nuevo</li>");
+		});
+	});
+</script>
+</body>
+</html>

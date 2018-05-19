@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>is</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<p id="contenido">ESTE ES UN TEXTO</p>
+	<button id="vesibilidad">Hame click</button>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#vesibilidad").click(function(){
+			$("#contenido").toggle();
+			var x = $("#contenido").is(':visible');
+			$("#vesibilidad").text(x === true ? "ocultar":"mostrar");
+			var m = (x===true)? "si es visble": "no es visible";
+			console.log(m);
+		});
+	});
+</script>
+</body>
+</html>

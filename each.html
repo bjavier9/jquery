@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>each</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var arreglo = ["maria","juana","facundo","romelia"];
+		$.each(arreglo, function(index, valor){
+			//if(valor === "juana"){
+
+			//	return false;
+
+			//}	
+			console.log(valor);
+			return(valor !=="juana");
+		});
+	});
+</script>
+</body>
+</html>

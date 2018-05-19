@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fadeout</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<button id="boton1">mostrar</button>
+<button id="boton2">ocultar</button>
+<p>
+	Este es un simple texto
+	<div><span>MENSAJE OCULTO</span></div>
+</p>
+<script type="text/javascript">
+	$(document).ready(function(){
+$("#boton1").click(function(){
+	$("div").fadeIn(3000, function(){
+		$("span").fadeIn(1000);
+});
+});
+$("#boton2").click(function(){
+$("div").fadeOut(3000, function(){
+	$("span").fadeOut(1000);
+});
+});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<button>Click</button>
+	<input type="text" id="espacio"/>
+	<input type="submit" id="enviar" value ="enviar"/>
+<div id="texto1">perro 1</div>
+<div id="texto2">perro 2</div>
+<div id="texto3">perro 3</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#texto1, #texto3, #texto2").hide();
+		});
+		$("#enviar").click(function(){
+			var x = $("#espacio").val();
+			alert(x);
+		});
+	});
+</script>
+</body>
+</html>

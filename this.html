@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<p id="texto">texto</p>
+<input type="button" id="boton" value="click">
+<script type="text/javascript">
+	$(document).ready(function(){
+	$("#boton").click(function(){
+		$("#texto").hide(3000).show(500);
+	});
+	});
+</script>
+</body>
+</html>

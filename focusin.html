@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>focusin</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<p>Nombre: <input type="text" id="nombre"><span id="id1"></span></p>
+	<p>Apellido:  <input type="text" id="apellido"><span id="id2"></span></p>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#nombre").focusin(function(){
+				$("#id1").html("ingrese su nombre");
+			});
+			$("#apellido").focusin(function(){
+				$("#id2").html("ingrese su apellido");
+			});
+
+		});
+	</script>
+
+</body>
+</html>

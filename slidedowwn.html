@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slidedown</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<button id="boton">hasmelo</button>
+	<div id="gato"></div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#boton").click(function(){
+			$("#gato").slideDown(4000,function(){
+				$(this).css("background-color", "black")
+			});
+		});
+	});
+</script>
+</body>
+</html>

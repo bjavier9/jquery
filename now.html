@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>snow</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div id="info"></div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			console.log($.now()+"---"+(new Date).getTime());
+			var seg = $.now()/1000;
+			var evtseg = Date.parse("25 December 2018")/1000;
+			var tiempo = evtseg - seg;
+			var  devt = Math.floor(tiempo/(60*60*24));
+			$("#info").text("Faltan"+devt+"dias para el evento");
+
+
+		});
+	</script>
+</body>
+</html>

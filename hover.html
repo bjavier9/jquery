@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hover</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div id="container">
+		<div class="caja">1</div>
+		<div class="caja">2</div>
+		<div class="caja">3</div>
+		<div class="caja">4</div>
+		<div class="caja">5</div>
+
+	</div>
+	<p id="info">info</p>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var parent = $("#container");
+		var divs= parent.children();
+		parent.append(divs.splice(Math.floor(Math.random()* divs.length), 1)[0]);
+		$(".caja").hover(function(){
+			if($(this).text()==="3"){
+				$("#info").html("Ganastes");
+			}
+			$(this).css("background-color", "yellow");
+		});
+	});
+	
+</script>
+</body>
+</html>

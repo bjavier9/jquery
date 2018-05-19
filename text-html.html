@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+<p id="texto1">Programacion</p>
+<p id= "texto2">codigo</p>
+<button id="buton1">cambiar text</button>
+<button id="button2">cambiar html</button>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$("#buton1").click(function(){
+			$("#texto1").text("<b>HOLA PERRO</b>");
+		});
+		$("#button2").click(function(){
+			$("#texto2").html("<b>HOLAA</b>");
+		});
+	});
+</script>
+</body>
+</html>

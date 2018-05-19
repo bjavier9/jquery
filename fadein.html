@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fadein</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<button>click</button>
+<p>
+	Este es un simple texto
+	<div><span>MENSAJE OCULTO</span></div>
+</p>
+<script type="text/javascript">
+	$(document).ready(function(){
+$("button").click(function(){
+$("div").fadeIn(3000, function(){
+$("span").fadeIn(1000);
+});
+});
+	});
+</script>
+</body>
+</html>

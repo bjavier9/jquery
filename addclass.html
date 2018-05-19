@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADd class</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+<p>Primer Parrafo</p>
+<p>segundo parrafo</p>
+<p>tercer parrafo</p>
+<button>Cambiar color</button>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("p").addClass(function(index){
+				return "perro"+(index+1);
+			});
+		});
+	});
+</script>
+</body>
+</html>

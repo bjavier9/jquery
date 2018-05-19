@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>keyup</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<form>
+	<p>Nombre: <input type="text"></p>
+		<p>Email: <input type="email"></p>
+	</form>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("input").keydown(function(){
+			$(this).css("background-color", "yellow");
+		});
+		$("input").keyup(function(){
+			$(this).css("background-color", "red");
+		});
+	});</script>
+</body>
+</html>

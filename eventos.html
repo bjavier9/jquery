@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>eventos</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<p id="p1">TEXTO1</p>
+<p id="p2">texto2</p>
+<p id="p3">texto3</p>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#p1").dblclick(function(){
+			$(this).hide();
+		});
+		$("#p2").dblclick(function(){
+			alert("gato con botas");
+		});
+		$("#p3").dblclick(function(){
+			$("#p1").show();
+		});
+	});
+</script>
+</body>
+</html>

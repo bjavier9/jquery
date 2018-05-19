@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fadetoggle</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<button id="bt1">CLICK 1</button>
+	<button id="bt2">click 2</button>
+	<button id="bt3">click 3</button>
+
+	<p id="p1">PRIMER PARRAFO</p>
+	<p id="p2">Segundo parrafo</p>
+	<p id="p3">tecer parrafo</p>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#bt1").click(function(){
+			$("#p1").fadeToggle('slow');
+		});
+		$("#bt2").click(function(){
+			$("#p2").fadeToggle('fast');
+		});
+		$("#bt3").click(function(){
+			$("#p3").fadeToggle('slow');
+		});
+	});
+</script>
+</body>
+</html>

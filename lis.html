@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<p>Lista 1</p>
+	<ul>
+		<li>uno</li>
+		<li>dos</li>
+		<li>tres</li>
+	</ul>
+	<p>Lista 2</p>
+	<ul>
+		<li>uno1</li>
+		<li>dos2</li>
+		<li>tres3</li>
+	</ul>
+	<button>Click</button>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("ul li:first-child").hide();
+		});
+		
+	});
+</script>
+</body>
+</html>

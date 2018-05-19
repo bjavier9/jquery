@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>submit</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<form id="formulario">
+	Email: <input type="text" id="correo">
+	<input type="submit" value="enviar">
+</form>
+<div id="info"></div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#formulario").submit(function(event){
+			event.preventDefault();
+			var correo = $("#correo").val();
+			$("#info").html("gracias "+correo+"Tu correo a sido enviado")
+
+		});
+	});
+</script>
+</body>
+</html>

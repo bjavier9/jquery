@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mauseout</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<p id="p1">PERRO</p>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#p1").mouseover(function(){
+					$(this).css("background-color", "red");		
+					});
+			$("#p1").mouseover(function(){
+				$(this).css("width", "200px");
+			});
+		});
+	</script>
+
+</body>
+</html>

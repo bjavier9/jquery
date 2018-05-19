@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>remove attr</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<p id="p1">	GORDA</p>
+<p class="clase">FLACA</p>
+<button>remove attr</button>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("p").removeAttr("id class");
+		});
+	});
+</script>
+</body>
+</html>

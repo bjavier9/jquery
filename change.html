@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>change</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+	<select name="transporte">
+		<option>carro</option>
+		<option>barco</option>
+		<option>avion</option>
+		<option>bus</option>
+	</select>
+	<div id="info"></div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("select[name='transporte']").change(function(){
+			$("#info").html("tu eleccion "+$("select[name='transporte']").val());
+		});
+	});
+</script>
+</body>
+</html>

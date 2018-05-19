@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fadetoggle</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<button>click</button>
+<div class="c1"></div>
+<div class="c2"></div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("div.c1").slideUp(2000).fadeIn(1000);
+			$("div.c2").slideUp(2000).fadeIn(1000);
+		});
+	});
+</script>
+</body>
+</html>

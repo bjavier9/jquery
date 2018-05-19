@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dlay</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<button>click</button><br><br>
+<div id="caja"></div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#caja").delay(3000).fadeOut(1000);
+		});
+	});
+</script>
+</body>
+</html>

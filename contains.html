@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contains</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div>perro</div>
+	<div>Gatos</div>
+	<div>Camellos</div>
+	<div>GIRAFAS</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("div:contains('Gatos')").css("background-color","green");
+	});
+</script>
+</body>
+</html>

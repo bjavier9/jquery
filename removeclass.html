@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>remove class</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div id="raton">FIRULAY</div>
+<button id="gato">ADD</button>
+<button id="perro">remove</button>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#gato").click(function(){
+			$("#raton").addClass("gato");
+		});
+		$("#perro").click(function(){
+			$("#raton|").removeClass("gato");
+		})
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>each 2</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+	<div class="mcl">rojo</div>
+	<div>verde</div>
+	<div class="mcl">azul</div>
+	<div>Blanco</div>
+	<div class="mcl">amarillo</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$.each($(".mcl"), function(index, valor){
+				console.log($(valor).text());
+			});
+		});
+	</script>
+
+</body>
+</html>

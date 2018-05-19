@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slidedown</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<button id="d">hasme click</button>
+	<button id="detenerse">detenerse</button>
+	<div id="r">Bienvenidos</div><br>
+	<div id="info"></div>
+	
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#d").click(function(){
+			$("#r").slideDown(4000, function(){
+				alert("punto final");
+				$("#info").text($("#r").height()+"px");
+			});
+		});
+		$("#detenerse").click(function(){
+			$("#r").stop();
+			$("#info").text($("#r").height()+"px");
+		});
+	});
+</script>
+</body>
+</html>

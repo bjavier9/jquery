@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mausedow</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+	<p id="pal1">Pala 1</p>
+	<p id="pal2">pala 2</p>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#pal1").click(function(){
+				$(this).hide();
+			});
+			$("#pal2").mousedown(function(){
+				$(this).hide();
+			});
+		});
+	</script>
+
+</body>
+</html>

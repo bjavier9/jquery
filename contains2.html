@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contains2</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<input type="text" id="buscador" placeholder="Busca animales">
+	<ul id="nombres">	
+		<li>gatos</li>
+		<li>perro</li>
+		<li>girafas</li>
+		<li>lobos</li>
+		<li>caballos</li>
+	</ul>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$("#buscador").keyup(function(){
+
+			var nombre = $("#buscador").val();
+
+			if($.trim(nombre) != ""){
+				$("#nombres li:not(:contains('"+nombre+"'))").hide();
+			}
+			else{
+				$("#nombres li").show();
+			}
+		});
+	});
+</script>
+</body>
+</html>

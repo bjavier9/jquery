@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mauseover</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<p class="pal" data-nuevo="pal1" id="pal1">PERRO</p>
+<p class="pal" data-nuevo="pal2" id="pal2">Gato</p>
+<p class="pal" data-nuevo="pal3" id="pal3">VACA</p>
+<p class="pal" data-nuevo="pal4" id="pal4">LOBO</p>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".pal").mouseover(function(){
+			var x =$(this).attr("data-nuevo");
+			$("#"+x).hide();
+		});
+		
+
+	});
+</script>
+</body>
+</html>
